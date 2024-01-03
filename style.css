@@ -9,7 +9,8 @@
     font-family: 
       'Roboto', serif;
     font-size: 1rem;
-    background-color: #95B8D1;
+    background-color: #276d45;
+    color: #f0f8ff;
   }
   
   table {
@@ -25,7 +26,7 @@
   th, td{
     box-sizing: border-box;
     border: solid 0.125rem aliceblue;
-    padding: 1rem;
+    padding: 0.75rem;
     text-align: left;
   }
   
@@ -39,9 +40,9 @@
   }
 
   td {
-    background-color: #95B8D1;
+    background-color: #729fc0;
     height: 100%;
-    width: 100%;
+    min-width: 100%;
   }
   
   td:first-of-type {
