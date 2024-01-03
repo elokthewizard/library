@@ -27,6 +27,7 @@ function updateDisplay() {
   let bookNum = 1;
   myLibrary.forEach(book => {
     const tr = document.createElement('tr');
+
     const button = document.createElement('button');
     
     // add each value to a cell and give each row a button
@@ -34,10 +35,13 @@ function updateDisplay() {
       const td = document.createElement('td');
       td.textContent = book[metaData];
       tr.appendChild(td);
-      tr.appendChild(button).setAttribute('id', 'deleteButton');
     };
+
     
     // add rows and buttons to the table, table to page
+    const buttonCell = document.createElement('td');
+    tr.appendChild(buttonCell);
+    buttonCell.appendChild(button).setAttribute('id', 'deleteButton');
     table.appendChild(tr).setAttribute("data-id", bookNum);
     bookNum++;
     let tableCap = document.querySelector('table').createCaption();

@@ -9,6 +9,7 @@
     font-family: 
       'Roboto', serif;
     font-size: 1rem;
+    background-color: #95B8D1;
   }
   
   table {
@@ -18,14 +19,12 @@
     border-collapse: collapse;
     margin-bottom: 1rem;
     margin-right: 0.25rem;
-    border: solid;
+    border: solid aliceblue;
   }
   
   th, td{
     box-sizing: border-box;
-    border-left: solid 0.125rem;
-    border-bottom: solid 0.125rem;
-    border-right: solid 0.125rem;
+    border: solid 0.125rem aliceblue;
     padding: 1rem;
     text-align: left;
   }
@@ -33,11 +32,17 @@
   th {
     font-family: 'Poppins', serif;
     font-size: 1.25rem;
+    color: aliceblue;
+    background-color: #223843;
     font-weight: 900;
     padding: 0.5rem 1rem;
   }
-  
-  
+
+  td {
+    background-color: #95B8D1;
+    height: 100%;
+    width: 100%;
+  }
   
   td:first-of-type {
     font-weight: 600;
@@ -51,24 +56,24 @@
   
   tr {
     width: 100%;
-    height: 100%;
-    justify-content: space-between
+    height: 2rem;
   }
   
   #deleteButton {
-    padding: 0;
-    margin: auto 0;
-    color: #E8E5DA;
+    padding: 0.5rem;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    color: aliceblue;
     font-weight: bold;
-    font-size: 1rem;
-    background-color: red;
+    text-align: center;
+    background-color: #d62f26;
     position: relative;
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
   }
   
   #deleteButton:hover {
-    background-color: #8b0000;
+    background-color: #7a1a15;
     cursor: pointer;
   }
   
@@ -78,9 +83,11 @@
   
   ::backdrop {
     background-image: linear-gradient(
-      45deg,
+      33deg,
+      pink,
       orange,
-      dodgerblue,
+      lavender,
+      lightblue,
       lightgreen
     );
     opacity: 0.75;
@@ -90,17 +97,17 @@
     display: flex;
     justify-content: center;
     font-weight: bold;
-    background-color: #3F69C4;
+    background-color: #223843;
     width: 50%;
     padding: 1.25rem;
-    color: #E8E5DA;
+    color: aliceblue;
     margin: 0 auto;
     border: none;
     box-shadow: 0.25rem 0.25rem black;
   }
   
   .add:hover {
-    background-color: #334876;
+    background-color: #142127;
   }
   
   caption {
@@ -111,4 +118,6 @@
     padding: 1rem 0rem;
     margin-bottom: 1rem;
     border: solid;
+    background-color: #223843;
+    color: aliceblue;
   }
