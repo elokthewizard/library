@@ -1,0 +1,114 @@
+.content, .secondary-content{
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  body {
+    font-family: 
+      'Roboto', serif;
+    font-size: 1rem;
+  }
+  
+  table {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    margin-right: 0.25rem;
+    border: solid;
+  }
+  
+  th, td{
+    box-sizing: border-box;
+    border-left: solid 0.125rem;
+    border-bottom: solid 0.125rem;
+    border-right: solid 0.125rem;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  th {
+    font-family: 'Poppins', serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    padding: 0.5rem 1rem;
+  }
+  
+  
+  
+  td:first-of-type {
+    font-weight: 600;
+    font-family: Helvetica;
+    font-style: italic;
+  }
+  
+  td:nth-of-type(even) {
+    font-style: italic;
+  }
+  
+  tr {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between
+  }
+  
+  #deleteButton {
+    padding: 0;
+    margin: auto 0;
+    color: #E8E5DA;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: red;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #deleteButton:hover {
+    background-color: #8b0000;
+    cursor: pointer;
+  }
+  
+  #deleteButton:active, .add:active{
+    transform: scale(0.98);
+  }
+  
+  ::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      orange,
+      dodgerblue,
+      lightgreen
+    );
+    opacity: 0.75;
+  }
+  
+  .add {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #3F69C4;
+    width: 50%;
+    padding: 1.25rem;
+    color: #E8E5DA;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0.25rem 0.25rem black;
+  }
+  
+  .add:hover {
+    background-color: #334876;
+  }
+  
+  caption {
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1rem 0rem;
+    margin-bottom: 1rem;
+    border: solid;
+  }

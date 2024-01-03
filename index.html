@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+	
+    
+  <div class="content">
+    <table>
+      <caption>Table Caption</caption>
+    </table>
+  </div>
+    
+  <div class="secondary-content">
+    <dialog>
+      <p>What book would you like to add?</p>
+      <form name="new-book" method="#">
+        <label for="title">Title: </label>
+        <br>
+        <input type="text" id="title" name="title">
+        <br>
+        <label for="author">Author :</label>
+        <br>
+        <input type="text" id="author" name="author">
+        <br>
+        <label for="pages">Pages: </label>
+        <br>
+        <input type="tel" id="pages" name="page number">
+        <br>
+        <fieldset>
+          <legend>Read yet?</legend>
+          <label for="yes-read">Yes</label>
+          <input type="radio" id="yes-read" value="read" name="read">
+          <br>
+          <label for="not-read">No</label>
+          <input type="radio" id="not-read" value="unread" name="read">
+        </fieldset>
+        <button type="submit" id="new-book" name="new-book">Close</button>
+      </form>
+    </dialog>
+    <button class='add'>+ Add to library?</button>
+
+  </div>
+  </body>
+</html>
