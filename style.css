@@ -19,8 +19,11 @@
     margin: 0 auto;
     border-collapse: collapse;
     margin-bottom: 1rem;
-    margin-right: 0.25rem;
     border: solid aliceblue;
+  }
+
+  thead > * {
+    background-color: #223843;
   }
   
   th, td{

@@ -2,12 +2,15 @@ const myLibrary = [];
 const content = document.querySelector(".content");
 const table = document.querySelector('table');
 
+
 function Book(Title, Author, Pages, Status) {
   this.Title = Title
   this.Author = Author
   this.Pages = Pages
   this.Status = Status
 };
+
+Book.prototype.Remove = null;
 
 // update page display
 function updateDisplay() {
@@ -16,13 +19,17 @@ function updateDisplay() {
   table.textContent = ""
 
   // create header / info
+  const tableHead = document.createElement('thead');
   const tableHeader = myLibrary[0]
+  
   for (info in tableHeader) {
       const th = document.createElement('th');
       th.textContent = info
-      table.appendChild(th)
+      tableHead.appendChild(th)
   };
   
+  table.appendChild(tableHead);
+
   // make a row for each book
   let bookNum = 1;
   myLibrary.forEach(book => {
