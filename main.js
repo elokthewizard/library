@@ -33,8 +33,9 @@ function updateDisplay() {
   // make a row for each book
   let bookNum = 1;
   myLibrary.forEach(book => {
-    const tr = document.createElement('tr');
 
+    //create DOM references
+    const tr = document.createElement('tr');
     const button = document.createElement('button');
     
     // add each value to a cell and give each row a button
@@ -44,7 +45,6 @@ function updateDisplay() {
       tr.appendChild(td);
     };
 
-    
     // add rows and buttons to the table, table to page
     tr.lastElementChild.appendChild(button).setAttribute('id', 'deleteButton');
     table.appendChild(tr).setAttribute("data-id", bookNum);

@@ -1,91 +1,99 @@
-.content, .secondary-content{
-    box-sizing: border-box;
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  body {
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
     font-family: 
       'Roboto', serif;
     font-size: 1rem;
     background-color: #276d45;
     color: #f0f8ff;
-  }
-  
-  table {
+}
+
+.content, .secondary-content{
     box-sizing: border-box;
-    width: 100%;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+  
+table {
+    box-sizing: border-box;
+    min-width: 100%;
     margin: 0 auto;
     border-collapse: collapse;
     margin-bottom: 1rem;
     border: solid aliceblue;
-  }
+}
 
-  thead > * {
+thead > * {
     background-color: #223843;
-  }
+}
   
-  th, td{
+th, td{
     box-sizing: border-box;
     border: solid 0.125rem aliceblue;
     padding: 0.75rem;
     text-align: left;
-  }
+}
   
-  th {
+th {
     font-family: 'Poppins', serif;
     font-size: 1.25rem;
     color: aliceblue;
     background-color: #223843;
     font-weight: 900;
     padding: 0.5rem 1rem;
-  }
+}
 
-  td {
+tr {
+    width: 100%;
+    min-height: 1.25rem;
+    height: 4rem;
+    white-space: nowrap;
+}
+
+td {
     background-color: #729fc0;
     height: 100%;
-    min-width: 100%;
-  }
+    width: 100%;
+    min-width: 20%;
+}
   
-  td:first-of-type {
+td:first-of-type {
     font-weight: 600;
     font-family: Helvetica;
     font-style: italic;
-  }
+}
   
-  td:nth-of-type(even) {
+td:nth-of-type(even) {
     font-style: italic;
-  }
+}
   
-  tr {
-    width: 100%;
-    height: 2rem;
-  }
-  
-  #deleteButton {
-    padding: 0.5rem;
-    aspect-ratio: 1;
+#deleteButton {
+    display: flex;
+    margin: 0 auto;
     box-sizing: border-box;
     color: aliceblue;
     font-weight: bold;
     text-align: center;
     background-color: #d62f26;
     position: relative;
-    min-height: 100%;
-    min-width: 100%;
-  }
+    min-height: 1rem;
+    min-width: 1rem;
+}
   
-  #deleteButton:hover {
+#deleteButton:hover {
     background-color: #7a1a15;
     cursor: pointer;
-  }
+}
   
-  #deleteButton:active, .add:active{
+#deleteButton:active, .add:active{
     transform: scale(0.98);
-  }
+}
   
-  ::backdrop {
+::backdrop {
     background-image: linear-gradient(
       33deg,
       pink,
@@ -95,9 +103,9 @@
       lightgreen
     );
     opacity: 0.75;
-  }
+}
   
-  .add {
+.add {
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -108,13 +116,13 @@
     margin: 0 auto;
     border: none;
     box-shadow: 0.25rem 0.25rem black;
-  }
+}
   
-  .add:hover {
+.add:hover {
     background-color: #142127;
-  }
+}
   
-  caption {
+caption {
     box-sizing: border-box;
     font-size: 1.25rem;
     font-style: italic;
@@ -124,4 +132,4 @@
     border: solid;
     background-color: #223843;
     color: aliceblue;
-  }
+}
