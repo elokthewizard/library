@@ -1,7 +1,7 @@
 const myLibrary = [];
 const content = document.querySelector(".content");
 const table = document.querySelector('table');
-
+const row = document.querySelector('tr');
 
 function Book(Title, Author, Pages, Status) {
   this.Title = Title
@@ -46,14 +46,12 @@ function updateDisplay() {
 
     
     // add rows and buttons to the table, table to page
-    const buttonCell = document.createElement('td');
-    tr.appendChild(buttonCell);
-    buttonCell.appendChild(button).setAttribute('id', 'deleteButton');
+    tr.lastElementChild.appendChild(button).setAttribute('id', 'deleteButton');
     table.appendChild(tr).setAttribute("data-id", bookNum);
     bookNum++;
     let tableCap = document.querySelector('table').createCaption();
     tableCap.innerText = "My Library!";
-    content.appendChild(table);  
+    content.appendChild(table);
     });
   
   //attach delete message to all buttons
